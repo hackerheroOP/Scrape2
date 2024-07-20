@@ -1,11 +1,11 @@
 import os
 
 
-DATABASE_CHANNEL = int(os.environ.get("DATABASE",""))
-BOTUSERNAME = os.environ.get("BOT","")
-TOPOSTCHANNEL = int(os.environ.get("POST",""))
-API_ID = int(os.environ.get("API_ID",""))
-API_HASH = os.environ.get("API_HASH","")
+DATABASE_CHANNEL = int(os.environ.get("DATABASE","-1002180333729"))
+BOTUSERNAME = os.environ.get("BOT","desi_pauwa_bot")
+TOPOSTCHANNEL = int(os.environ.get("POST","-1002182195778"))
+API_ID = int(os.environ.get("API_ID","2066976"))
+API_HASH = os.environ.get("API_HASH","6668d5406ac9675f9de3e8fd1ccc357d")
 st = os.environ.get("STRING")
 
 from pyrogram import Client
