@@ -1,0 +1,14 @@
+# --- For-Bot-Working --------- #
+https://github.com/KurimuzonAkuma/pyrogram/archive/v2.1.22.zip
+TgCrypto
+pyromod==1.5
+# --- For-Database ------------ #
+pymongo
+dnspython
+# --- For-Web-Response ------- #
+aiohttp
+pillow
+requests
+hachoir
+opencv-python
+pytz
