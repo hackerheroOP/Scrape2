@@ -1,9 +1,9 @@
 import os
 
 
-DATABASE_CHANNEL = int(os.environ.get("DATABASE","-1002216592184"))
-BOTUSERNAME = os.environ.get("BOT","Teekhi_Mirchi_Bot")
-TOPOSTCHANNEL = int(os.environ.get("POST","-1002214896402"))
+DATABASE_CHANNEL = int(os.environ.get("DATABASE","-1002180333729"))
+BOTUSERNAME = os.environ.get("BOT","desi_pauwa_bot")
+TOPOSTCHANNEL = int(os.environ.get("POST","-1002182195778"))
 API_ID = int(os.environ.get("API_ID","2066976"))
 API_HASH = os.environ.get("API_HASH","6668d5406ac9675f9de3e8fd1ccc357d")
 st = os.environ.get("STRING","AQAfiiAAIYSwM-LJ0WJJWe89rUowypcqD8eIQGk7eWu2g4aFrRPhioGWghsUwAOxfOlLCIBG7E4DSeDyA6TtMr8zmY6G9MLowOPvWV-LKbYQyU756km8V_EYuan_la0oIdbiKm4D25ipizzl1LaQNGtjaRMCJXULqZlw4TnATgu9ZyT0T36PJcUZaeWn9UE2inlCvnSS7AOdfl6_jWZ_PeVjiYErdZB11Tf60VZVtZ3uFGqM2Cl0SYQkh54Ya0nY_9-8TKFSzjcxdRZp1kgD26yDp33KEYTvl859f3cwrsFJeXZ3zugpcJXB9JfDnN-xaCQK3fInp-prbJcS8cebciPpUpNOrgAAAAGpRFkfAA")
@@ -106,11 +106,11 @@ async def decode(encoded_string):
 
 
 app = Client("hiiibot",api_hash=API_HASH,api_id=API_ID,session_string=st)
-@app.on_message(filters.private & filters.command(["li"]))
+@app.on_message(filters.private & filters.command(["desi"]))
 async def hello(client, message):
     x = await message.reply_text("Scrapping Started....")
     await x.delete()
-    x = message.text.split("/li")[1].split('https://t.me/c/')[1]
+    x = message.text.split("/desi")[1].split('https://t.me/c/')[1]
     chnid = int(f'-100{x.split("/")[0]}')
     await message.delete()
     s = app.get_chat_history(chnid)
