@@ -8,6 +8,7 @@ API_ID = int(os.environ.get("API_ID","2066976"))
 API_HASH = os.environ.get("API_HASH","6668d5406ac9675f9de3e8fd1ccc357d")
 st = os.environ.get("STRING","AQApxggAZg0h2JCPNzaIaKlYfM_LerosCKIZzfEi8KAX8uuoyXamds3R5uz9jhcNtTns9PdCjS6yM9LQXtejbxDsSYksZg1bmk5pZxWVw36sfVsgEVfVwU-91ptynZLeHE36XnfNdGEVI73f-vcZzltAl6raIQkYaNoe2TTfDjPxMJK9-Y6lfIsGy_a8FeSmcMg-b4Vml9qD3rcrYNHt6Tjzv_x4-EdPviq5U_5hv4cr2tGJgVAmpdQhYwk9tWRuRMrOBXhZaGnq7XIS4EsQVU1CeE8EsHph_YgDWX7c-0FMsQVRVJKsmBlmpSytg9ql2yEBfA3CO3c0e7xsZxpQ42qlde8lfgAAAAGpRFkfAA")
 
+
 from pyrogram import Client
 from pyrogram import Client, filters
 import re
@@ -108,7 +109,7 @@ async def decode(encoded_string):
 app = Client("hiiibot",api_hash=API_HASH,api_id=API_ID,session_string=st)
 @app.on_message(filters.private & filters.command(["li"]))
 async def hello(client, message):
-    x = await message.reply_text("Scrapping Started....")
+    x = await message.reply_text("hiii")
     await x.delete()
     x = message.text.split("/li")[1].split('https://t.me/c/')[1]
     chnid = int(f'-100{x.split("/")[0]}')
@@ -120,12 +121,17 @@ async def hello(client, message):
         await asyncio.sleep(5)
         if msg.photo or msg.video:
             if "https://t.me/" in str(msg.caption) and "start" in str(msg.caption):
-                bot_name, start_value = re.findall(r't.me/([^/?]+).*start=([^"&]+)', msg.caption)[0] if re.search(r't.me/([^/?]+).*start=([^"&]+)', msg.caption) else (None, None)
+                #bot_name, start_value = re.findall(r't.me/([^/?]+).*start=([^"&]+)', msg.caption)[0] if re.search(r't.me/([^/?]+).*start=([^"&]+)', msg.caption) else (None, None)
+                bot_name, start_value = (
+                re.search(r'https://t.me/([^/?]+)\?start=([^"&\s]+)', msg.caption).groups() 
+               if msg.caption and re.search(r'https://t.me/([^/?]+)\?start=([^"&\s]+)', msg.caption) 
+               else (None, None)
+)
                 start_value = start_value.strip().replace("TUTORIAL", "").replace("🔗How to open the link🔗","").replace("🔗 How to open the link🔗","").replace("🔗How to open the link 🔗","").replace("🔗 How to open the link 🔗","").replace("Tutorial", "").replace("How to open link in hindi","").replace("How to open link","").replace("🔗How to open the link🔗","").replace("How to open link in hindi","")
                 if start_value:
                     v = await client.send_message(chat_id=bot_name, text=f"/start {start_value}")
                     await v.delete()
-                    await asyncio.sleep(10)
+                    await asyncio.sleep(15)
 
                     first = False
                     w = await decode(start_value)
@@ -149,7 +155,7 @@ async def hello(client, message):
                                 file = await client.download_media(message=messag, file_name=f".app/DOWNLOADS/{random_string}.mp4")
                                 await messag.delete()
                                 sed = await take_screen_shot(f'.app/DOWNLOADS/{random_string}.mp4')
-                                print('uploading...')
+                                print('uplo')
                                 i = await client.send_video(video=f'.app/DOWNLOADS/{random_string}.mp4', chat_id=DATABASE_CHANNEL, thumb=sed[0], duration=sed[3], height=sed[2], width=sed[1])
                                 if first == False:
                                     first = i.id
@@ -176,7 +182,7 @@ async def hello(client, message):
                                 await messag.delete()
                                 y = f'.app/DOWNLOADS/{random_string}.mp4'
                                 sed = await take_screen_shot(y)
-                                print('uploading...')
+                                print('uplo')
                                 i = await client.send_video(video=f'.app/DOWNLOADS/{random_string}.mp4', chat_id=DATABASE_CHANNEL, thumb=sed[0], duration=sed[3], height=sed[2], width=sed[1])
                                 first = i.id
                             elif messag.document:
