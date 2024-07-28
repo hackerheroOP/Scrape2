@@ -1,9 +1,9 @@
 import os
 
 
-DATABASE_CHANNEL = int(os.environ.get("DATABASE","-1002216592184"))
-BOTUSERNAME = os.environ.get("BOT","Teekhi_Mirchi_Bot")
-TOPOSTCHANNEL = int(os.environ.get("POST","-1002214896402"))
+DATABASE_CHANNEL = int(os.environ.get("DATABASE","-1002180333729"))
+BOTUSERNAME = os.environ.get("BOT","desi_pauwa_bot")
+TOPOSTCHANNEL = int(os.environ.get("POST","-1002182195778"))
 API_ID = int(os.environ.get("API_ID","2066976"))
 API_HASH = os.environ.get("API_HASH","6668d5406ac9675f9de3e8fd1ccc357d")
 st = os.environ.get("STRING","AQApxggAZg0h2JCPNzaIaKlYfM_LerosCKIZzfEi8KAX8uuoyXamds3R5uz9jhcNtTns9PdCjS6yM9LQXtejbxDsSYksZg1bmk5pZxWVw36sfVsgEVfVwU-91ptynZLeHE36XnfNdGEVI73f-vcZzltAl6raIQkYaNoe2TTfDjPxMJK9-Y6lfIsGy_a8FeSmcMg-b4Vml9qD3rcrYNHt6Tjzv_x4-EdPviq5U_5hv4cr2tGJgVAmpdQhYwk9tWRuRMrOBXhZaGnq7XIS4EsQVU1CeE8EsHph_YgDWX7c-0FMsQVRVJKsmBlmpSytg9ql2yEBfA3CO3c0e7xsZxpQ42qlde8lfgAAAAGpRFkfAA")
