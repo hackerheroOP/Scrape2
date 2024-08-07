@@ -215,7 +215,7 @@ async def hello(client, message):
                             await client.copy_message(parse_mode=enums.ParseMode.MARKDOWN, caption=f"**\n Here is Your Link**\n\n{link}", chat_id=TOPOSTCHANNEL, message_id=msg.id, from_chat_id=chnid)
 
                     except:
-                        asyncio.sleep(60)
+                        await asyncio.sleep(15)
 
      except Exception as e:
          print(e)
