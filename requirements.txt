@@ -1,7 +1,6 @@
 # --- For-Bot-Working --------- #
-#https://github.com/KurimuzonAkuma/pyrogram/archive/v2.1.22.zip
+https://github.com/KurimuzonAkuma/pyrogram/archive/v2.1.22.zip
 pyromod==1.5
-pyrofork
 TgCrypto
 # --- For-Database ------------ #
 pymongo
