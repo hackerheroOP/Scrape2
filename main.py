@@ -1,12 +1,12 @@
 import os
 
 
-DATABASE_CHANNEL = int(os.environ.get("DATABASE","-1002216592184"))
-BOTUSERNAME = os.environ.get("BOT","Teekhi_Mirchi_Bot")
-TOPOSTCHANNEL = int(os.environ.get("POST","-1002214896402"))
+DATABASE_CHANNEL = int(os.environ.get("DATABASE","-1002177504895"))
+BOTUSERNAME = os.environ.get("BOT","watch_for_free_bot")
+TOPOSTCHANNEL = int(os.environ.get("POST","-1002199454907"))
 API_ID = int(os.environ.get("API_ID","2066976"))
 API_HASH = os.environ.get("API_HASH","6668d5406ac9675f9de3e8fd1ccc357d")
-st = os.environ.get("STRING","AQApxggAZg0h2JCPNzaIaKlYfM_LerosCKIZzfEi8KAX8uuoyXamds3R5uz9jhcNtTns9PdCjS6yM9LQXtejbxDsSYksZg1bmk5pZxWVw36sfVsgEVfVwU-91ptynZLeHE36XnfNdGEVI73f-vcZzltAl6raIQkYaNoe2TTfDjPxMJK9-Y6lfIsGy_a8FeSmcMg-b4Vml9qD3rcrYNHt6Tjzv_x4-EdPviq5U_5hv4cr2tGJgVAmpdQhYwk9tWRuRMrOBXhZaGnq7XIS4EsQVU1CeE8EsHph_YgDWX7c-0FMsQVRVJKsmBlmpSytg9ql2yEBfA3CO3c0e7xsZxpQ42qlde8lfgAAAAGpRFkfAA")
+st = os.environ.get("STRING","BQApxggAfom7zKlXViXHo-cuhKBeUaRaWx6Ys-qch9-u0tK5iTL0Nzh0MySuEiDj5sm0TRFhUf5KMdSKlu9bAKhUWd9QXt_m_ZWcTPXmNT6EX0HwjJuqdSN28-S27Zo51LZT37uMOXSWQDwe90UmQxRzzzTryuTL85GNlBag3cAe0Wg_rRsUBVj8JlReTIfdWcv2lwbmY87Z5jRA3FH6XQrxUgiKJxfm0Z1mI5Z3MaJqiIDnO7Tx5kV3RJFOlTa-8H_piHLrbCxlG_YNaahSJmuOzs6fpjcbY_aEKCq5VmDdJlK9NRCtaEFCgaYq3hTLYDtd-cEFZzOiU5tDC_uj-k8NLlN53QAAAAGivmc_AA")
 
 
 from pyrogram import Client
