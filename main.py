@@ -107,11 +107,11 @@ async def decode(encoded_string):
 
 
 app = Client("hiiibot",api_hash=API_HASH,api_id=API_ID,session_string=st)
-@app.on_message(filters.private & filters.command(["li"]))
+@app.on_message(filters.private & filters.command(["scrape"]))
 async def hello(client, message):
-    x = await message.reply_text("hiii")
+    x = await message.reply_text("scraping started...")
     await x.delete()
-    x = message.text.split("/li")[1].split('https://t.me/c/')[1]
+    x = message.text.split("/scrape")[1].split('https://t.me/c/')[1]
     chnid = int(f'-100{x.split("/")[0]}')
     await message.delete()
     s = app.get_chat_history(chnid)
