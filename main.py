@@ -125,7 +125,7 @@ async def hello(client, message):
                 if start_value:
                     v = await client.send_message(chat_id=bot_name, text=f"/start {start_value}")
                     await v.delete()
-                    await asyncio.sleep(10)
+                    await asyncio.sleep(45)
 
                     first = False
                     w = await decode(start_value)
