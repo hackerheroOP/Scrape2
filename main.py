@@ -6,7 +6,7 @@ BOTUSERNAME = os.environ.get("BOT","desi_pauwa_bot")
 TOPOSTCHANNEL = int(os.environ.get("POST","-1002182195778"))
 API_ID = int(os.environ.get("API_ID","2066976"))
 API_HASH = os.environ.get("API_HASH","6668d5406ac9675f9de3e8fd1ccc357d")
-st = os.environ.get("STRING","AQApxggAojsbTS8sp5-I95USiADXSz8bFRs7QKLoacRhVh8O98Xp0pBkTa7aJs8D5prc9enzYTDXWcOMwvH-pk6gtbyphKpu2DzEpYTjvixypCzhtIh6w494QPWAKEP-SMPIsN0eTm9-oinohpVd3_ttK1H_1ToeQ3degmTelwMqbevff12tEz-PlKK2zn-NbDDCoXuuwvh2ibVkygtbHb6dOwmrpkNFtyJ9CSXVSzKi-_j4M8Cr0ETTbB1Rco7dEnEqfmSOeVPNUKScWYZFoqFowPLjE2oxgPwIaW25_UGRVP82ksT4iJ9sDydyoc1dEdrogsFNfWZapZvGtX1O8norSSsRPAAAAAG23hzAAA")
+st = os.environ.get("STRING","AQApxggAHnY1oy4K7CqJ_w4uc8WXnfLTUVFZQ80gnVfWXJcx5VNa7VK7MeaDTBVUCNEtZSZj1erxeJPOp6YGQTIt-XPYx1d0QJCOGl88Nwip867c96W4pPWz2XeNCGJytEd9nTYsNvjIKgh93wBRlHauZ8V0R71XqDSWMNLsanvb-66rFRjiJKOGnHxSzFLhKuu6DDYXwuuimqRIbjYr5C_sWpXrI2MSBlDIDNhpcqO0mPJMMnMvBAOrssNhx0l7qZ7Vj1dDDxRaDjKjzuUHJ7hARrVBIDf0m0zGuH3npqkWeNr_RqOi6XZ52tz73rbLVAeQ4i5iC2PXLvglu7vVaUA1BmfnogAAAAG23hzAAA)
 
 from pyrogram import Client
 from pyrogram import Client, filters
