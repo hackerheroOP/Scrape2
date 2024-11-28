@@ -6,7 +6,7 @@ BOTUSERNAME = os.environ.get("BOT","Desi_Pauwa_Bot")
 TOPOSTCHANNEL = int(os.environ.get("POST","-100220771992"))
 API_ID = int(os.environ.get("API_ID","2066976"))
 API_HASH = os.environ.get("API_HASH","6668d5406ac9675f9de3e8fd1ccc357d")
-st = os.environ.get("STRING","BQAfiiAANSd5YZwDSNv4GB35Ue4CMQU00vqldAq3_kbuswtkmb6ylbyRww07BZGe2_tYqJmLTH38WWTOvLdmLiWgAdT19_udM8jyu1O5ttNO7p1837c0jIGwdQ16uGYFfl8VreJbAGwRI0Bo3YyDkP_xxC9pxAm-rObOaKQBSjzENW4INhYuyMuKCUY2vEDCev5SSKWFQM5KmCY1KDPksp1V_n1_ztyQtRsEBeiEMWgrtmy7J3fM7FQnlpixV-SP2ErWdOy8v8hX-I6m4f0x5xBFajcstSdY1lHbCqKKSL1Gc9xLqNkWPZgxxO4zgunuSr4LCM3CT5_n_I8rmf-Zt_I0SZtwIgAAAAG6eRFnAA")
+st = os.environ.get("STRING","")
 
 
 from pyrogram import Client
