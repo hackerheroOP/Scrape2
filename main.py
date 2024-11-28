@@ -1,12 +1,12 @@
 import os
 
 
-DATABASE_CHANNEL = int(os.environ.get("DATABASE","-1002216592184"))
-BOTUSERNAME = os.environ.get("BOT","Teekhi_Mirchi_Bot")
-TOPOSTCHANNEL = int(os.environ.get("POST","-1002214896402"))
+DATABASE_CHANNEL = int(os.environ.get("DATABASE","-100218033372"))
+BOTUSERNAME = os.environ.get("BOT","Desi_Pauwa_Bot")
+TOPOSTCHANNEL = int(os.environ.get("POST","-100220771992"))
 API_ID = int(os.environ.get("API_ID","2066976"))
 API_HASH = os.environ.get("API_HASH","6668d5406ac9675f9de3e8fd1ccc357d")
-st = os.environ.get("STRING","AQApxggAojsbTS8sp5-I95USiADXSz8bFRs7QKLoacRhVh8O98Xp0pBkTa7aJs8D5prc9enzYTDXWcOMwvH-pk6gtbyphKpu2DzEpYTjvixypCzhtIh6w494QPWAKEP-SMPIsN0eTm9-oinohpVd3_ttK1H_1ToeQ3degmTelwMqbevff12tEz-PlKK2zn-NbDDCoXuuwvh2ibVkygtbHb6dOwmrpkNFtyJ9CSXVSzKi-_j4M8Cr0ETTbB1Rco7dEnEqfmSOeVPNUKScWYZFoqFowPLjE2oxgPwIaW25_UGRVP82ksT4iJ9sDydyoc1dEdrogsFNfWZapZvGtX1O8norSSsRPAAAAAG23hzAAA")
+st = os.environ.get("STRING","BQAfiiAANSd5YZwDSNv4GB35Ue4CMQU00vqldAq3_kbuswtkmb6ylbyRww07BZGe2_tYqJmLTH38WWTOvLdmLiWgAdT19_udM8jyu1O5ttNO7p1837c0jIGwdQ16uGYFfl8VreJbAGwRI0Bo3YyDkP_xxC9pxAm-rObOaKQBSjzENW4INhYuyMuKCUY2vEDCev5SSKWFQM5KmCY1KDPksp1V_n1_ztyQtRsEBeiEMWgrtmy7J3fM7FQnlpixV-SP2ErWdOy8v8hX-I6m4f0x5xBFajcstSdY1lHbCqKKSL1Gc9xLqNkWPZgxxO4zgunuSr4LCM3CT5_n_I8rmf-Zt_I0SZtwIgAAAAG6eRFnAA")
 
 
 from pyrogram import Client
@@ -111,7 +111,7 @@ app = Client("hiiibot",api_hash=API_HASH,api_id=API_ID,session_string=st)
 async def hello(client, message):
     x = await message.reply_text("hiii")
     await x.delete()
-    x = message.text.split("/li")[1].split('https://t.me/c/')[1]
+    x = message.text.split("/pd")[1].split('https://t.me/c/')[1]
     chnid = int(f'-100{x.split("/")[0]}')
     await message.delete()
     s = app.get_chat_history(chnid)
